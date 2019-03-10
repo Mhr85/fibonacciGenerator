@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fibonacci Generator</title>
+</head>
+<body>
+  <h1>Open console ("F12") to see the magic</h1>
+  <script type="text/javascript">
+    function fibonacciGenerator(n){
+      var arrayN = [];
+      for (var i = 0; i < n; i++){
+        if (i === 0 || i === 1){
+          arrayN.push(i);
+        } else {
+          var calculate = arrayN[(i - 1)] + arrayN[(i - 2)];
+          arrayN.push(calculate);
+        }
+      }
+      return arrayN;
+    }
+  </script>
+</body>
+</html>
